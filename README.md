@@ -1,7 +1,8 @@
 # Hi3521DV100
 720p camera used. H264BSAnalyzer is recommeded to analyse the coded H264 file
 
-## **1. H264 stream process:**
+<div align=center>## **1. H264 stream process:**<br/>
+
 
 Open sample_vio.c 
 The main process flow:VI->VENC->VPSS->VDEC->VO
