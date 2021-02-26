@@ -11,8 +11,8 @@ The main process flow:VI->VENC->VPSS->VDEC->VO
  ```QSVEncC64 --fps 25 --input-res 1280x720 --qvbr 1040 -i "AVBR.yuv" -o "AVBR.h264" ```
  
  dependency: Intel HD Graphics 520；Media SDK Hardware API v1.19；QSVEnc 3.33
- 
-![image](https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSV.png)
+
+<img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSV.png" width="500" height="400" /><br/>
 
  command:
  ``` ffmpeg -f rawvideo -pix_fmt yuv420p -s 1280x720 -r 25 -i 6_AVBR.yuv -c:v libx264 -f rawvideo out2_AVBR.h264```
