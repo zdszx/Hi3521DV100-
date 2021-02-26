@@ -1,11 +1,9 @@
 # Hi3521DV100
 720p camera used. H264BSAnalyzer is recommeded to analyse the coded H264 file
 
-<div align=center><br/>
- 
 ## **1. H264 stream process:**
-Open sample_vio.c 
-The main process flow:VI->VENC->VPSS->VDEC->VO
+Open sample_vio.c;
+The main process flow```VI->VENC->VPSS->VDEC->VO```
 
 ## **2. Performance compared with Intel QSV, KungPeng920**
  command:
@@ -13,7 +11,7 @@ The main process flow:VI->VENC->VPSS->VDEC->VO
  
  dependency: Intel HD Graphics 520；Media SDK Hardware API v1.19；QSVEnc 3.33
 
-<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSV.png" width="500" height="400" /><br/>
+<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSV.png" width="500" height="400" /></div>
 
  command:
  ``` ffmpeg -f rawvideo -pix_fmt yuv420p -s 1280x720 -r 25 -i 6_AVBR.yuv -c:v libx264 -f rawvideo out2_AVBR.h264```
