@@ -5,7 +5,7 @@
 Open sample_vio.c;
 The main process flow```VI->VENC->VPSS->VDEC->VO```
 
-## **2. Performance compared with Intel QSV, KungPeng920**
+## **2. Hi3521 Performance compared with Intel QSV, KungPeng920**
  command:
  ```QSVEncC64 --fps 25 --input-res 1280x720 --qvbr 1040 -i "AVBR.yuv" -o "AVBR.h264" ```
  
