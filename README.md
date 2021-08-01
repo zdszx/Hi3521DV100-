@@ -24,11 +24,14 @@ The main process flow```VI->VENC->VPSS->VDEC->VO```
 <img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/3.png" width="470" height="250" /><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/4.png" width="470" height="250" />
 
 The H264 encoding done by ffmpeg on the Kunpeng 920 differs from the frame structure of the Hi3521 encoded file, firstly, its entropy encoding method is CABAC, the bit rate of CABAC saves 5%-14% compared to CAVLC, and the bit rate saving increases with the increase of quantization step. its computational resource consumption is acceptable on server-level CPUs.
-![Kunpeng 920](https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/Kunpeng 920.png)
-![Hi3521](https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/Hi3521.png)
+
+![image](https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/Kunpeng 920.png)
+
+![image](https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/Hi3521.png)
 
 GPU encoding provides separate image information PPS and SEI for each frame's pixel matrix, thanks to its suitability for computationally intensive tasks, but because of the low performance of control-intensive tasks during video encoding (slow exchange between GPU and computer main memory), QSV also does not make the work pipeline between CPU and GPU. it shows low performance of control-intensive tasks in the video encoding process.
-![QSV](https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSV.png)
+
+![image](https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSV.png)
 
 
 ## **3. H264toRTPsend / RTPtoH264recv:**
