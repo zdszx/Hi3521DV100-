@@ -29,12 +29,12 @@ The H264 encoding done by ffmpeg on the Kunpeng 920 differs from the frame struc
 <div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/Kunpeng 920.png" width="600" height="400" /></div>
     
 #### Hi3521
-<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/Hi3521.png" width="600" height="400" /></div>
+<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/Hi3521.png" width="600" height="300" /></div>
 
 GPU encoding provides separate image information PPS and SEI for each frame's pixel matrix, thanks to its suitability for computationally intensive tasks, but because of the low performance of control-intensive tasks during video encoding (slow exchange between GPU and computer main memory), QSV also does not make the work pipeline between CPU and GPU. it shows low performance of control-intensive tasks in the video encoding process.
     
 #### QSV
-<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSVana.png" width="600" height="400" /></div>
+<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/QSVana.png" width="600" height="300" /></div>
 
 
 
