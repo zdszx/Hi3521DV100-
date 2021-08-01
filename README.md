@@ -47,5 +47,5 @@ recv command:
 ```./recv   [save filename]  [PORT]```
 
 
-<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/1.png" width="700" height="500" /></div>
+<div align=center><img src="https://github.com/zdszx/Hi3521DV100-/blob/master/IMAGE/1.png" width="900" height="500" /></div>
 
